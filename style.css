@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:300,400&display=swap');
+
+:root {
+    --green: #32b777;
+    --white: #fff;
+    --gray: #555;
+    --lightgray: #ececec;
+    --darkgray: #222;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: var(--gray);
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: var(--lightgray);
+}
+h1, h2, h3, h4, h5 {
+    font-weight: 100;
+  }
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 20px 0 20px;
+  }
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+button {
+    background: var(--green);
+    padding: 7px 30px;
+    color: var(--white);
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 20px;
+  }
+button:hover {
+    background: var(--darkgray);
+    cursor: pointer;
+    transition: .4s ease;
+  }
+/*****************
+header
+*****************/
+header {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/horiznos-header.jpg);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0 120px 0;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+nav ul {
+    width: 700px;
+    margin: auto;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 550;
+    font-size: 1.05rem;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+  }
+.logo {
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 650;
+    color: var(--white);
+  }
+h1 {
+  margin-top: 70px;
+  font-weight: 550;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+h5{
+  margin-bottom: 20px;
+}
+/*****************
+one
+*****************/
+h2{
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#naslov p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.oneArticle {
+  float: left;
+  width: 33%;
+  padding: 0 20px;
+}
+
+img {
+display: block;
+height: auto;
+width: 100%;
+margin-bottom: 10px;
+}
+.one{
+  padding-bottom: 50px;
+}
+/*****************
+two
+*****************/
+
+.two {
+  background-color: var(--white);
+}
+.con1-16 {
+  width: 8%;
+  float: left;
+}
+.con7-16 {
+  width: 42%;
+  float: left;
+  padding-right: 15px;
+}
+i.fas.fa-gifts{
+  font-size: 2.5rem;
+  display: block;
+  color: var(--white);
+  text-align: center;
+}
+.icon  {
+  width: 80%;
+  border-radius: 10%;
+  background-color: var(--green);
+  padding: 10px 5px;
+}
+.paragrafMar{
+  margin-bottom: 20px;
+}
+.con7-16 h3{
+  text-align: left;
+  font-weight: bold;
+}
+.con7-16 p{
+  text-align: justify;
+}
+.element{
+  height: 60px;
+  background-color: var(--white);
+  margin: auto;
+}
+
+/*****************
+Footer
+*****************/
+
+.footer {
+  background-color: var(--darkgray);
+}
+.con20{
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+.con40{
+  width: 40%;
+  float: left;
+  padding: 10px
+}
+#con20 ul{
+  list-style: none;
+}
+#con20 ul li a{
+  text-decoration-line: underline;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+.footer .container{
+  border-bottom: 2px solid #555555;
+}
+#footerBottom {
+  text-align: center;
+  padding:20px 0 80px 0;
+}
+#footerBottom p {
+  display: inline;
+}
+#footerBottom a {
+  color: var(--white);
+}
+
+/*******************
+R E S P O N S I V E
+*******************/
+
+@media(max-width: 768px){
+  header nav ul {
+    width: 80%;
+    margin-top: 30px;
+  }
+  h5 {
+    padding-bottom: 50px;
+  }
+  header{
+    padding-top: 100px;
+  }
+  #naslov p{
+    text-align: justify;
+    padding-top: 30px;
+  }
+  .oneArticle {
+    float: none;
+    padding: 30px 0px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+  }
+  .con7-16 {
+    width: 70%;
+    float: left;
+    margin: 15px 0px;
+    padding: 0px;
+  }
+  .con1-16 {
+    width: 20%;
+    float: left;
+    margin: 15px 0px;
+    padding: 0px;
+  }
+  i.fas.fa-gifts{
+    font-size: 1.5rem;
+  }
+  .con40 {
+    width: 100%;
+    float: left;
+    padding: 0px;
+    text-align: justify;
+  }
+  .con20 {
+    width: 100%;
+    float: left;
+    padding: 50px 0px;
+  }
+  .con40 p:first-child, .con20 p{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+  }
+  .con40:last-child{
+    padding-bottom: 40px;
+  }
+
+}
